@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for, flash
+rom flask import Flask, render_template, request, redirect, url_for, flash
 from models import db, User, Expense, Budget
 from flask_login import LoginManager, login_user, logout_user, login_required, current_user
 from datetime import datetime, date
@@ -158,3 +158,4 @@ if __name__ == '__main__':
     with app.app_context():
         db.create_all()
     app.run(debug=True)
+
